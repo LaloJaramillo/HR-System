@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/employee-styles.css">
+    <link rel="stylesheet" href="styles/main.css" /> 
+    <link rel="stylesheet" href="styles/skeleton.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/generate-menu.js"></script>
+    <script src="./js/add-employee.js"></script>
+    
+    <title>Dunder Mifflin</title>
+</head>
+
+<body>
+    <div class="container">
+        <top-menu></top-menu>
+
+        <div class="data-info-container five columns" id="data-info-fill">
+            <h4 id="emp_id">Agregar nuevo empleado</h4>
+            <label for="emp_name">Nombre</label>
+            <input id="emp_name" type="text" />
+
+            <label for="emp_lastname">Apellido</label>
+            <input id="emp_lastname" type="text" />
+
+            <label for="emp_phone">Teléfono</label>
+            <input id="emp_phone" type="text" />
+
+            <label for="emp_email">Email</label>
+            <input id="emp_email" type="text" />
+
+            <label for="emp_address">Dirección</label>
+            <input id="emp_address" type="text" />
+
+            <button id="add-emp-btn" onclick="createEmployee()">Agregar empleado</button>
+        </div>
+    </div>
+</body>
+
+</html>

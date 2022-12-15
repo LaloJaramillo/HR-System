@@ -1,0 +1,78 @@
+.container{
+    background-color: rgb(199, 199, 199);
+    height:fit-content;
+    min-height: calc(100% - 3em);
+    width: 100%;
+}
+
+.data-info-container{
+    background-color: white;
+    height: fit-content;
+    border-radius: 0.7em;
+    box-shadow: 1px 20px 29px -10px rgba(174, 174, 174, 1);
+    -webkit-box-shadow: 1px 20px 29px -10px rgba(174, 174, 174, 1);
+    -moz-box-shadow: 1px 20px 29px -10px rgba(174, 174, 174, 1);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.data-info-container > label{
+    position: relative;
+    left: 0;
+}
+
+input{
+    width: 100%;
+}
+
+label{
+    justify-self: left;
+    width: 100%;
+}
+
+h4{
+    color: rgb(11, 129, 165);
+    font-weight: bolder;
+}
+
+.actions{
+    position: absolute;
+    bottom: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.actions > button{
+    width: 15em;
+    margin: 1.5em;
+}
+
+#button-act, #add-emp-btn{
+    background-color: rgb(11, 129, 165);
+    color: white;
+}
+
+#button-act:hover, #add-emp-btn:hover{
+    background-color: rgb(30, 174, 218);
+    color: black;
+    border: none;
+}
+
+#button-del{
+    background-color: rgb(143, 5, 5);
+    color: white;
+}
+
+#button-del:hover{
+    background-color: rgb(235, 78, 78);
+    color: black;
+    border: none;
+}
+

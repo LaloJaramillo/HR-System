@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/skeleton.css" />
+    <link rel="stylesheet" href="styles/index-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/dunder-mifflin.js"></script>
+    <script src="./js/generate-menu.js"></script>
+    <title>Dunder Mifflin</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <top-menu></top-menu>
+
+        <div class="info-container twelve columns" id="info-container">
+            <h4>Personal en funciones</h4>
+
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Buscar empleado por nombre">
+                <div class="search" onclick="searchEmployee(document.getElementById('search-input').value)">
+                    <img src="./img/search.png" >
+                </div>
+            </div>
+
+            <div id="inner-container">
+                
+            </div>
+
+
+        </div>
+
+        <div class="add-user-btn" onclick="window.location='add-employee.html'">
+            <img src="./img/add-user.png" id="add-user-icon">
+        </div>
+    </div>
+</body>
+
+</html>
